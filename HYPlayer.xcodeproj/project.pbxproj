@@ -8,19 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		5049D257226D9FC0003B1C1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D256226D9FC0003B1C1F /* AppDelegate.swift */; };
-		5049D259226D9FC0003B1C1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D258226D9FC0003B1C1F /* ViewController.swift */; };
 		5049D25B226D9FC1003B1C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5049D25A226D9FC1003B1C1F /* Assets.xcassets */; };
 		5049D25E226D9FC1003B1C1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5049D25C226D9FC1003B1C1F /* Main.storyboard */; };
+		5049D273226DA085003B1C1F /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D267226DA085003B1C1F /* PlayView.swift */; };
+		5049D274226DA085003B1C1F /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D269226DA085003B1C1F /* Interface.swift */; };
+		5049D275226DA085003B1C1F /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D26B226DA085003B1C1F /* MusicModel.swift */; };
+		5049D276226DA085003B1C1F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5049D26D226DA085003B1C1F /* MainViewController.xib */; };
+		5049D277226DA085003B1C1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D26E226DA085003B1C1F /* MainViewController.swift */; };
+		5049D278226DA085003B1C1F /* FuncTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D270226DA085003B1C1F /* FuncTools.swift */; };
+		5049D279226DA085003B1C1F /* AAudioPlayerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D271226DA085003B1C1F /* AAudioPlayerModule.swift */; };
+		5049D27A226DA085003B1C1F /* NSViewExpand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D272226DA085003B1C1F /* NSViewExpand.swift */; };
+		5049D27C226DA315003B1C1F /* HYSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5049D27B226DA315003B1C1F /* HYSliderView.swift */; };
+		506CFCE92289125700C24F9B /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CFCE72289125700C24F9B /* MusicTableViewController.swift */; };
+		506CFCEA2289125700C24F9B /* MusicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506CFCE82289125700C24F9B /* MusicTableViewController.xib */; };
+		506CFCEC22891A2300C24F9B /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CFCEB22891A2300C24F9B /* MusicTableViewCell.swift */; };
+		506CFCEE22891A3300C24F9B /* MusicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CFCED22891A3300C24F9B /* MusicTableCell.swift */; };
+		506CFCF022893A3900C24F9B /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CFCEF22893A3900C24F9B /* Function.swift */; };
+		506CFCF222893B8100C24F9B /* COCOAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506CFCF122893B8100C24F9B /* COCOAKit.framework */; };
+		B1025B0EE4DA509A69D86C89 /* libPods-HYPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 323C89B9197C6BFA297453C4 /* libPods-HYPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323C89B9197C6BFA297453C4 /* libPods-HYPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5049D253226D9FC0003B1C1F /* HYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5049D256226D9FC0003B1C1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5049D258226D9FC0003B1C1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5049D25A226D9FC1003B1C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5049D25D226D9FC1003B1C1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5049D25F226D9FC1003B1C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5049D260226D9FC1003B1C1F /* HYPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HYPlayer.entitlements; sourceTree = "<group>"; };
+		5049D267226DA085003B1C1F /* PlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		5049D269226DA085003B1C1F /* Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		5049D26B226DA085003B1C1F /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		5049D26D226DA085003B1C1F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5049D26E226DA085003B1C1F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5049D270226DA085003B1C1F /* FuncTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncTools.swift; sourceTree = "<group>"; };
+		5049D271226DA085003B1C1F /* AAudioPlayerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAudioPlayerModule.swift; sourceTree = "<group>"; };
+		5049D272226DA085003B1C1F /* NSViewExpand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewExpand.swift; sourceTree = "<group>"; };
+		5049D27B226DA315003B1C1F /* HYSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYSliderView.swift; sourceTree = "<group>"; };
+		5049D27D226DACE7003B1C1F /* HYPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HYPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		506CFCE72289125700C24F9B /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		506CFCE82289125700C24F9B /* MusicTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewController.xib; sourceTree = "<group>"; };
+		506CFCEB22891A2300C24F9B /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		506CFCED22891A3300C24F9B /* MusicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableCell.swift; sourceTree = "<group>"; };
+		506CFCEF22893A3900C24F9B /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		506CFCF122893B8100C24F9B /* COCOAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = COCOAKit.framework; sourceTree = "<group>"; };
+		57CC38EFABB4E02D8851D5D7 /* Pods-HYPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYPlayer.release.xcconfig"; path = "Target Support Files/Pods-HYPlayer/Pods-HYPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		B265BD2B256176E5E8C5346B /* Pods-HYPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYPlayer.debug.xcconfig"; path = "Target Support Files/Pods-HYPlayer/Pods-HYPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +61,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1025B0EE4DA509A69D86C89 /* libPods-HYPlayer.a in Frameworks */,
+				506CFCF222893B8100C24F9B /* COCOAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B253C7A91F0AB4B84432657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				506CFCF122893B8100C24F9B /* COCOAKit.framework */,
+				323C89B9197C6BFA297453C4 /* libPods-HYPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34DB8D8756DC70100D60F6C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B265BD2B256176E5E8C5346B /* Pods-HYPlayer.debug.xcconfig */,
+				57CC38EFABB4E02D8851D5D7 /* Pods-HYPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5049D24A226D9FC0003B1C1F = {
 			isa = PBXGroup;
 			children = (
 				5049D255226D9FC0003B1C1F /* HYPlayer */,
 				5049D254226D9FC0003B1C1F /* Products */,
+				34DB8D8756DC70100D60F6C0 /* Pods */,
+				2B253C7A91F0AB4B84432657 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,13 +109,67 @@
 			isa = PBXGroup;
 			children = (
 				5049D256226D9FC0003B1C1F /* AppDelegate.swift */,
-				5049D258226D9FC0003B1C1F /* ViewController.swift */,
+				5049D26C226DA085003B1C1F /* ViewController */,
+				5049D266226DA085003B1C1F /* View */,
+				5049D26A226DA085003B1C1F /* Model */,
+				5049D268226DA085003B1C1F /* Header */,
+				5049D26F226DA085003B1C1F /* Tools */,
 				5049D25A226D9FC1003B1C1F /* Assets.xcassets */,
 				5049D25C226D9FC1003B1C1F /* Main.storyboard */,
 				5049D25F226D9FC1003B1C1F /* Info.plist */,
 				5049D260226D9FC1003B1C1F /* HYPlayer.entitlements */,
 			);
 			path = HYPlayer;
+			sourceTree = "<group>";
+		};
+		5049D266226DA085003B1C1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5049D267226DA085003B1C1F /* PlayView.swift */,
+				5049D27B226DA315003B1C1F /* HYSliderView.swift */,
+				506CFCEB22891A2300C24F9B /* MusicTableViewCell.swift */,
+				506CFCED22891A3300C24F9B /* MusicTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5049D268226DA085003B1C1F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5049D27D226DACE7003B1C1F /* HYPlayer-Bridging-Header.h */,
+				5049D269226DA085003B1C1F /* Interface.swift */,
+				506CFCEF22893A3900C24F9B /* Function.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5049D26A226DA085003B1C1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5049D26B226DA085003B1C1F /* MusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5049D26C226DA085003B1C1F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5049D26E226DA085003B1C1F /* MainViewController.swift */,
+				5049D26D226DA085003B1C1F /* MainViewController.xib */,
+				506CFCE72289125700C24F9B /* MusicTableViewController.swift */,
+				506CFCE82289125700C24F9B /* MusicTableViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5049D26F226DA085003B1C1F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5049D270226DA085003B1C1F /* FuncTools.swift */,
+				5049D271226DA085003B1C1F /* AAudioPlayerModule.swift */,
+				5049D272226DA085003B1C1F /* NSViewExpand.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5049D263226D9FC1003B1C1F /* Build configuration list for PBXNativeTarget "HYPlayer" */;
 			buildPhases = (
+				ABC13A69E045376C59CC37E5 /* [CP] Check Pods Manifest.lock */,
 				5049D24F226D9FC0003B1C1F /* Sources */,
 				5049D250226D9FC0003B1C1F /* Frameworks */,
 				5049D251226D9FC0003B1C1F /* Resources */,
@@ -95,6 +205,7 @@
 				TargetAttributes = {
 					5049D252226D9FC0003B1C1F = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -122,19 +233,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				5049D25B226D9FC1003B1C1F /* Assets.xcassets in Resources */,
+				506CFCEA2289125700C24F9B /* MusicTableViewController.xib in Resources */,
+				5049D276226DA085003B1C1F /* MainViewController.xib in Resources */,
 				5049D25E226D9FC1003B1C1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABC13A69E045376C59CC37E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HYPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5049D24F226D9FC0003B1C1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5049D259226D9FC0003B1C1F /* ViewController.swift in Sources */,
+				506CFCEE22891A3300C24F9B /* MusicTableCell.swift in Sources */,
+				5049D279226DA085003B1C1F /* AAudioPlayerModule.swift in Sources */,
+				506CFCF022893A3900C24F9B /* Function.swift in Sources */,
+				5049D27A226DA085003B1C1F /* NSViewExpand.swift in Sources */,
+				5049D273226DA085003B1C1F /* PlayView.swift in Sources */,
+				5049D27C226DA315003B1C1F /* HYSliderView.swift in Sources */,
+				5049D275226DA085003B1C1F /* MusicModel.swift in Sources */,
 				5049D257226D9FC0003B1C1F /* AppDelegate.swift in Sources */,
+				5049D278226DA085003B1C1F /* FuncTools.swift in Sources */,
+				506CFCE92289125700C24F9B /* MusicTableViewController.swift in Sources */,
+				5049D274226DA085003B1C1F /* Interface.swift in Sources */,
+				506CFCEC22891A2300C24F9B /* MusicTableViewCell.swift in Sources */,
+				5049D277226DA085003B1C1F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +418,20 @@
 		};
 		5049D264226D9FC1003B1C1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B265BD2B256176E5E8C5346B /* Pods-HYPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HYPlayer/HYPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CTVC883N2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = HYPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -282,18 +439,28 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HYPlayer.HYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/wuhaoyuan/Desktop/HYPlayer/HYPlayer/Header/HYPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		5049D265226D9FC1003B1C1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57CC38EFABB4E02D8851D5D7 /* Pods-HYPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = HYPlayer/HYPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CTVC883N2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = HYPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HYPlayer.HYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/wuhaoyuan/Desktop/HYPlayer/HYPlayer/Header/HYPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

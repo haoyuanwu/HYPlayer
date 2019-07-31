@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="HYPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="Hz6-mo-xeY" id="8a3-ga-EIU"/>
+                <outlet property="playView" destination="hFU-yz-UNi" id="rP7-FM-11J"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="980" height="588"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="wqY-u5-YL1">
+                    <rect key="frame" x="0.0" y="0.0" width="980" height="588"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="hFU-yz-UNi" customClass="PlayView" customModule="HYPlayer" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="980" height="84"/>
+                            <subviews>
+                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HXQ-zn-5N9">
+                                    <rect key="frame" x="10" y="17" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="272-gc-dmg"/>
+                                        <constraint firstAttribute="width" constant="50" id="Ykn-ZD-3YC"/>
+                                    </constraints>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Headset" id="R8b-lj-gxK"/>
+                                </imageView>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e7p-hC-TB9">
+                                    <rect key="frame" x="76" y="50" width="31" height="17"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="歌名" id="yYy-FL-tpy">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="wfw-yy-zfj">
+                                    <rect key="frame" x="76" y="17" width="31" height="17"/>
+                                    <textFieldCell key="cell" selectable="YES" title="歌手" id="poR-3B-qZI">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="DHs-BM-pmz">
+                                    <rect key="frame" x="465" y="17" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="1CZ-CA-tSz"/>
+                                        <constraint firstAttribute="height" constant="50" id="iY0-cu-ai3"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="播放" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YBZ-l6-Ikc">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-H6-pl3">
+                                    <rect key="frame" x="525" y="22" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="SzM-Yn-Kl2"/>
+                                        <constraint firstAttribute="height" constant="40" id="cGi-ca-na7"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="下一首" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eN9-P3-La7">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="wgm-W6-X3m">
+                                    <rect key="frame" x="415" y="22" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="9ms-Og-mHf"/>
+                                        <constraint firstAttribute="height" constant="40" id="fSd-fm-fTV"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="上一首" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="f2r-uz-odP">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="3C9-jo-gZB">
+                                    <rect key="frame" x="930" y="27" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="8rd-Dp-7xK"/>
+                                        <constraint firstAttribute="width" constant="30" id="Oev-te-VKc"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="随机播放" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Vvc-nh-XDz">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <button translatesAutoresizingMaskIntoConstraints="NO" id="cW5-2E-47c">
+                                    <rect key="frame" x="890" y="27" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="XmZ-fa-96g"/>
+                                        <constraint firstAttribute="width" constant="30" id="bUa-1H-J9G"/>
+                                    </constraints>
+                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="声音" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="VZt-x4-3GA">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Vfa-H6-pl3" firstAttribute="centerY" secondItem="wgm-W6-X3m" secondAttribute="centerY" id="7BG-jq-4bh"/>
+                                <constraint firstItem="wfw-yy-zfj" firstAttribute="bottom" secondItem="HXQ-zn-5N9" secondAttribute="bottom" id="9HB-CG-I0d"/>
+                                <constraint firstItem="3C9-jo-gZB" firstAttribute="centerY" secondItem="hFU-yz-UNi" secondAttribute="centerY" id="E35-Sf-Ftc"/>
+                                <constraint firstItem="DHs-BM-pmz" firstAttribute="leading" secondItem="wgm-W6-X3m" secondAttribute="trailing" constant="10" id="H3F-Dv-Oue"/>
+                                <constraint firstItem="cW5-2E-47c" firstAttribute="centerY" secondItem="3C9-jo-gZB" secondAttribute="centerY" id="NxA-zZ-7xK"/>
+                                <constraint firstItem="e7p-hC-TB9" firstAttribute="leading" secondItem="HXQ-zn-5N9" secondAttribute="trailing" constant="18" id="RnD-WN-oU1"/>
+                                <constraint firstItem="wfw-yy-zfj" firstAttribute="leading" secondItem="HXQ-zn-5N9" secondAttribute="trailing" constant="18" id="Xzj-d4-3Yz"/>
+                                <constraint firstItem="HXQ-zn-5N9" firstAttribute="centerY" secondItem="hFU-yz-UNi" secondAttribute="centerY" id="Ydc-37-mkW"/>
+                                <constraint firstItem="DHs-BM-pmz" firstAttribute="centerX" secondItem="hFU-yz-UNi" secondAttribute="centerX" id="ZEE-LC-C8F"/>
+                                <constraint firstAttribute="trailing" secondItem="3C9-jo-gZB" secondAttribute="trailing" constant="20" id="cAK-4v-IJo"/>
+                                <constraint firstItem="3C9-jo-gZB" firstAttribute="leading" secondItem="cW5-2E-47c" secondAttribute="trailing" constant="10" id="cp6-IM-FRY"/>
+                                <constraint firstItem="Vfa-H6-pl3" firstAttribute="leading" secondItem="DHs-BM-pmz" secondAttribute="trailing" constant="10" id="mGX-Ar-pF4"/>
+                                <constraint firstItem="DHs-BM-pmz" firstAttribute="centerY" secondItem="wgm-W6-X3m" secondAttribute="centerY" id="mjO-DK-Ozm"/>
+                                <constraint firstItem="e7p-hC-TB9" firstAttribute="top" secondItem="HXQ-zn-5N9" secondAttribute="top" id="riU-jo-uOZ"/>
+                                <constraint firstItem="HXQ-zn-5N9" firstAttribute="leading" secondItem="hFU-yz-UNi" secondAttribute="leading" constant="10" id="x91-no-FWJ"/>
+                                <constraint firstAttribute="height" constant="84" id="xvJ-dL-Dez"/>
+                                <constraint firstItem="DHs-BM-pmz" firstAttribute="centerY" secondItem="hFU-yz-UNi" secondAttribute="centerY" id="zXt-ee-bA0"/>
+                            </constraints>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hFU-yz-UNi" firstAttribute="leading" secondItem="wqY-u5-YL1" secondAttribute="leading" id="CsD-aE-MLg"/>
+                        <constraint firstAttribute="trailing" secondItem="hFU-yz-UNi" secondAttribute="trailing" id="j6H-bI-9ol"/>
+                        <constraint firstAttribute="bottom" secondItem="hFU-yz-UNi" secondAttribute="bottom" id="tti-ht-NcT"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wqY-u5-YL1" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="O1a-vK-sd4"/>
+                <constraint firstAttribute="trailing" secondItem="wqY-u5-YL1" secondAttribute="trailing" id="X8Q-gr-m1N"/>
+                <constraint firstAttribute="bottom" secondItem="wqY-u5-YL1" secondAttribute="bottom" id="fGJ-JH-I28"/>
+                <constraint firstItem="wqY-u5-YL1" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="qym-5w-aHV"/>
+            </constraints>
+            <point key="canvasLocation" x="152" y="144"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Headset" width="43" height="43"/>
+        <image name="上一首" width="43" height="43"/>
+        <image name="下一首" width="43" height="43"/>
+        <image name="声音" width="43" height="43"/>
+        <image name="播放" width="43" height="43"/>
+        <image name="随机播放" width="43" height="43"/>
+    </resources>
+</document>

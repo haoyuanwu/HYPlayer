@@ -11,10 +11,17 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
+    var mainWindow:NSWindow?
+    let mainViewController = MainViewController(nibName: "MainViewController", bundle: Bundle.main)
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        mainWindow = NSWindow(contentViewController: mainViewController)
+        mainWindow?.title = ""
+        mainWindow?.titlebarAppearsTransparent = true;
+        mainWindow?.makeKeyAndOrderFront(nil)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

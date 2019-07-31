@@ -1,0 +1,6 @@
+framework module COCOAKit {
+  umbrella header "COCOAKit.h"
+
+  export *
+  module * { export * }
+}
